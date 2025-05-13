@@ -111,6 +111,11 @@ const messages = useWebSocket('ws://localhost:8080');
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username }),
         });
+        // const response = await fetch('/api/ai-analytics', {
+        //   method: 'POST',
+        //   headers: { 'Content-Type': 'application/json' },
+        //   body: JSON.stringify({ username }),
+        // });
 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

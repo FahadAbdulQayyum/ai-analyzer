@@ -12,7 +12,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // Define public routes (e.g., sign-in)
-  const publicRoutes = ['/login', '/signup', '/about', '/slider'];
+  const publicRoutes = ['/login', '/signup', '/about', '/slider', '/ai-analyzer'];
   const isPublicRoute = publicRoutes.some((route) => pathname.startsWith(route));
 
   // Check if the user is authenticated

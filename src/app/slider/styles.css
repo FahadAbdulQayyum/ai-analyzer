@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  height: 600vh;
+  width: 100vw;
+  font-family: "Nunito", sans-serif;
+  background-color: #1d1e22;
+  color: white;
+}
+
+h1 {
+  font-size: 10vw;
+}
+
+.slider-section {
+  /* height: 22vh; */
+  height: 80vh;
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.wheel {
+  position: absolute;
+  /* top: 0; */
+  top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300vw;
+  height: 300vw;
+  max-width: 2000px;
+  max-height: 2000px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wheel__card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8%; /* Increased from 4% */
+  max-width: 300px; /* Increased from 150px */
+  aspect-ratio: 1 / 1; /* Maintain a square aspect ratio */
+  cursor: pointer;
+}
+
+.wheel__card img {
+  width: 100%;
+  height: auto; /* Ensure the image scales proportionally */
+  pointer-events: none;
+  /* z-index: 999; */
+  cursor: pointer;
+  position: absolute;
+  will-change: transform;
+}
+
+.pg {
+  z-index: 10001 !important;
+}
